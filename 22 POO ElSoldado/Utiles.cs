@@ -6,7 +6,7 @@
         Escopeta escopeta = new Escopeta();
         Revolver revolver = new Revolver();
         Rifle rifle = new Rifle();
-        public void Menu()
+        public static void Menu()
         {
             
             int opcion = 0;
@@ -21,6 +21,7 @@
                 3- Disparar.
                 4- Ver arma en uso.
                 5- Salir.");
+
                 try
                 {
                     opcion = int.Parse(Console.ReadLine());
