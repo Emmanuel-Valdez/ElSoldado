@@ -22,7 +22,7 @@ namespace _22_POO_ElSoldado
         {
 
             this.arma = null;
-            Console.WriteLine("El arma de descarto correctamente");
+            Console.WriteLine("El arma se descartó correctamente");
         }
 
         public void DispararArma()
@@ -32,7 +32,9 @@ namespace _22_POO_ElSoldado
 
         public void VerArma()
         {
-            Console.WriteLine(this.arma.GetType());
+            // le quitamos estos caracteres al valor devuleto por la funcion gettype "_22_POO_ElSoldado."
+            
+            Console.WriteLine($"Arma en uso: {this.arma.GetType().ToString().Remove(0,18)}");
         }
 
 
