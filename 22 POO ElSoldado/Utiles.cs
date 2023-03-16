@@ -38,8 +38,6 @@ namespace _22_POO_ElSoldado
                             {
                                 Console.WriteLine("Parece que el soldado ya está equipado con otra arma.");
                             }
-                            
-
                             break;
                         case 2:
                             if (s1.Arma != null)
